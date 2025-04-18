@@ -8,8 +8,6 @@ import TrailerCard from "@/components/TrailerCard/TrailerCard";
 export default function Home() {
   const t = useTranslations("Header");
   const OPTIONS: EmblaOptionsType = {};
-  const SLIDE_COUNT = 5;
-  const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
   const IMAGES = [
     "/images/zavod/zavod01.jpg",
     "/images/zavod/zavod02.jpg",

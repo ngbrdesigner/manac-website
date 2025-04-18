@@ -4,7 +4,6 @@ import "./globals.css";
 
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getLocale, getTranslations } from "next-intl/server";
-import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 
 const interFont = Inter({
