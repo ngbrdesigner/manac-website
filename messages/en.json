@@ -1,0 +1,22 @@
+{
+  "Layout": {
+    "production of semi-trailers": "Production of semi-trailers",
+    "manac": "MANAC-AUTO"
+  },
+  "LocaleSwitcher": {
+    "english": "English",
+    "russian": "Русский"
+  },
+  "Header": {
+    "main": "Main",
+    "about": "About",
+    "production": "Production",
+    "news": "News",
+    "service": "Service",
+    "vacancy": "Vacancy",
+    "contact": "Contact"
+  },
+  "HomePage": {
+    "title": "Hello world!"
+  }
+}

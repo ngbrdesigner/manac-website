@@ -1,0 +1,95 @@
+/* components/TrailerCard.css */
+.trailer-card {
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+.trailer-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.trailer-content {
+  padding: 16px;
+}
+
+.trailer-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 4px;
+}
+
+.trailer-subtitle {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.trailer-badges {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.badge {
+  background-color: #e60000;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.trailer-specs {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.spec-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--detail-high-contrast);
+}
+
+.details-button {
+  margin-top: 16px;
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  color: var(--text-medium-contrast);
+  border: 1px solid var(--detail-medium-contrast);
+  cursor: pointer;
+  transition: border 0.3s;
+  font-family: var(--font-inter);
+}
+
+.details-button:hover {
+  border: 1px solid var(--detail-high-contrast);
+}
+
+/* Адаптивность */
+@media (max-width: 480px) {
+  .trailer-card {
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .badge {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+  }
+
+  .details-button {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}

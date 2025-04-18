@@ -1,0 +1,22 @@
+{
+  "Layout": {
+    "production of semi-trailers": "Производство полуприцепов",
+    "manac": "МАНАК-АВТО"
+  },
+  "LocaleSwitcher": {
+    "english": "English",
+    "russian": "Русский"
+  },
+  "Header": {
+    "main": "Главная",
+    "about": "О компании",
+    "production": "Продукция",
+    "news": "Новости",
+    "service": "Сервис",
+    "vacancy": "Вакансии",
+    "contact": "Контакты"
+  },
+  "HomePage": {
+    "title": "Привет мир!"
+  }
+}

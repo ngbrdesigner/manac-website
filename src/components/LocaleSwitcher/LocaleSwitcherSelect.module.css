@@ -1,0 +1,81 @@
+.wrapper {
+  position: relative;
+}
+
+.button {
+  font: var(--font-inter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background: var(--color-black);
+  color: var(--color-white);
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease;
+  margin-left: 45px;
+}
+@media (max-width: 600px) {
+  .button {
+    margin-left: 0;
+    font-size: 12px;
+  }
+  .wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+.button:hover {
+  background-color: #222;
+}
+
+.buttonDisabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.buttonText {
+  margin-right: 0.5rem;
+}
+
+.arrow {
+  font-size: 0.8rem;
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  margin-top: 0.5rem;
+  min-width: 8rem;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 50;
+  overflow: hidden;
+  padding: 0.25rem 0;
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+}
+
+.dropdownItem:hover {
+  background-color: #f1f5f9;
+}
+
+.selectedIcon {
+  margin-right: 0.5rem;
+  width: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.itemLabel {
+  color: #1e293b;
+  font-size: 1rem;
+}
