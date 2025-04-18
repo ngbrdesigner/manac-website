@@ -28,7 +28,7 @@ export default function Home() {
     extension: "8 м",
     workingArea: "11,8 – 19,8 м",
     loadingHeight: "895 мм",
-    imageUrl: "/images/zavod/zavod05.jpg", // укажи путь к изображению
+    imageUrl: "/images/zavod/zavod05.jpg",
   };
 
   return (
