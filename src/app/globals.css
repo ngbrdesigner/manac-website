@@ -1,22 +1,35 @@
 :root {
+  /* Базовые */
   --color-white: #d7d7d7;
   --color-black: #171717;
-  --brand-primary: rgb(227, 6, 19);
-  --brand-secondary: rgb(52, 84, 209);
-  --brand-alternative: rgb(245, 245, 220);
-  --background-site: rgb(249, 249, 249);
-  --background-code: rgb(244, 244, 244);
-  --text-body: rgb(54, 49, 61);
-  --text-comment: rgb(99, 94, 105);
-  --text-high-contrast: rgb(49, 49, 49);
-  --text-medium-contrast: rgb(99, 94, 105);
-  --text-low-contrast: rgb(116, 109, 118);
-  --detail-high-contrast: rgb(192, 192, 192);
-  --detail-medium-contrast: rgb(234, 234, 234);
-  --detail-low-contrast: rgb(240, 240, 242);
-  --admonition-note: rgb(46, 109, 188);
-  --admonition-warning: rgb(255, 196, 9);
-  --admonition-danger: rgb(220, 38, 38);
+
+  /* Бренд */
+  --primary-red: rgb(227, 6, 19);
+  --primary-blue: rgb(52, 84, 209);
+  --light-beige: rgb(245, 245, 220);
+
+  /* Фон */
+  --bg-page: rgb(249, 249, 249);
+  --bg-code: rgb(244, 244, 244);
+  --bg-medium-gray: rgb(51, 51, 51);
+  --bg-dark-gray: rgb(43, 43, 43);
+
+  /* Текст */
+  --text-dark: rgb(54, 49, 61);
+  --text-gray: rgb(99, 94, 105);
+  --text-strong: rgb(49, 49, 49);
+  --text-medium: rgb(99, 94, 105);
+  --text-muted: rgb(116, 109, 118);
+
+  /* Границы */
+  --border-dark: rgb(192, 192, 192);
+  --border-medium: rgb(234, 234, 234);
+  --border-light: rgb(240, 240, 242);
+
+  /* Уведомления */
+  --info-blue: rgb(46, 109, 188);
+  --warning-yellow: rgb(255, 196, 9);
+  --error-red: rgb(220, 38, 38);
   --brand-primary-rgb-value: 47, 112, 193;
   --brand-secondary-rgb-value: 116, 97, 195;
   --brand-alternative-rgb-value: 19, 120, 134;
@@ -49,6 +62,7 @@ svg,
 div {
   -webkit-tap-highlight-color: transparent;
   tap-highlight-color: transparent;
+  border: none;
 }
 html,
 body {
@@ -138,13 +152,13 @@ a {
   height: 3.6rem;
   z-index: 1;
   border-radius: 50%;
-  color: var(--detail-high-contrast);
+  color: var(--border-dark);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .embla__button:disabled {
-  color: var(--text-high-contrast);
+  color: var(--bg-dark-gray);
 }
 .embla__button__svg {
   width: 35%;

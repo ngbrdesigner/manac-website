@@ -29,8 +29,6 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <EmblaCarousel slides={IMAGES} options={OPTIONS} />
-
-      <TrailerCard data={trailer} />
     </div>
   );
 }

@@ -1,0 +1,133 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 колонки */
+  gap: 20px; /* Отступ между карточками */
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Планшеты (2 колонки) */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Мобильные (1 колонка) */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    gap: 15px;
+  }
+}
+/* Стили для полоски фильтров */
+.filterBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  background: var(--color-black);
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.filterButton {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 16px;
+  color: var(--color-white);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.filterButton:hover {
+  background: var(--bg-dark-gray);
+}
+
+.filterButton.active {
+  background: var(--bg-medium-gray);
+  color: white;
+  border-color: #333;
+}
+
+/* Стили для контейнера с карточками (адаптивные) */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .filterBar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filterButton {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Стили для мобильного меню фильтров */
+.mobileFilterButton {
+  display: none;
+  padding: 15px;
+  background: var(--color-black);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobileFilterButton button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--bg-medium-gray);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.selectedFilter {
+  color: white;
+  font-weight: 500;
+  padding: 0 10px;
+  text-transform: capitalize;
+}
+
+/* На мобильных скрываем фильтры по умолчанию и показываем кнопку */
+@media (max-width: 768px) {
+  .filterBar {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .filterBar.show {
+    display: flex;
+  }
+
+  .mobileFilterButton {
+    display: flex;
+  }
+
+  .filterButton {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
