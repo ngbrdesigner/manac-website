@@ -33,6 +33,8 @@
   --admonition-note-rgb-value: 46, 109, 188;
   --admonition-warning-rgb-value: 255, 196, 9;
   --admonition-danger-rgb-value: 220, 38, 38;
+  --font-unbounded: "Unbounded", sans-serif;
+  --font-inter: "Inter", sans-serif;
 }
 
 /* @media (prefers-color-scheme: dark) {
