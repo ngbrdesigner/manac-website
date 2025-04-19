@@ -1,7 +1,6 @@
 import styles from "./page.module.css";
 import EmblaCarousel from "@/components/Carousel/Carousel";
 import { EmblaOptionsType } from "embla-carousel";
-import { TrailerInfo } from "@/types";
 
 export default function Home() {
   const OPTIONS: EmblaOptionsType = {};
