@@ -1,12 +1,10 @@
 import styles from "./page.module.css";
-import { useTranslations } from "next-intl";
 import EmblaCarousel from "@/components/Carousel/Carousel";
 import { EmblaOptionsType } from "embla-carousel";
 import { TrailerInfo } from "@/types";
 import TrailerCard from "@/components/TrailerCard/TrailerCard";
 
 export default function Home() {
-  const t = useTranslations("Header");
   const OPTIONS: EmblaOptionsType = {};
   const IMAGES = [
     "/images/zavod/zavod01.jpg",
@@ -14,7 +12,6 @@ export default function Home() {
     "/images/zavod/zavod03.jpg",
     "/images/zavod/zavod04.jpg",
     "/images/zavod/zavod05.jpg",
-    // добавьте столько изображений, сколько вам нужно
   ];
 
   const trailer: TrailerInfo = {
@@ -31,7 +28,7 @@ export default function Home() {
 
   return (
     <div className={styles.page}>
-      {/* <EmblaCarousel slides={IMAGES} options={OPTIONS} /> */}
+      <EmblaCarousel slides={IMAGES} options={OPTIONS} />
 
       <TrailerCard data={trailer} />
     </div>
