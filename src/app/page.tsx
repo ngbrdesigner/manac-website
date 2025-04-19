@@ -19,23 +19,21 @@ export default function Home() {
 
   const trailer: TrailerInfo = {
     title: "TSR 5SOU2N",
-    subtitle: "Раздвижной полуприцеп",
+    subtitle: "extendable semi-trailer",
     axles: 5,
-    capacity: "64,5 т",
-    length: "16,6 – 24,6 м",
-    extension: "8 м",
-    workingArea: "11,8 – 19,8 м",
-    loadingHeight: "895 мм",
-    imageUrl: "/images/zavod/zavod05.jpg",
+    capacity: "64,5",
+    length: "16,6 – 24,6",
+    extension: "8",
+    workingArea: "11,8 – 19,8",
+    loadingHeight: "895",
+    imageUrl: "/images/5osei/01.webp",
   };
 
   return (
     <div className={styles.page}>
-      <main className={styles.main}>{t("main")}</main>
-      <EmblaCarousel slides={IMAGES} options={OPTIONS} />
-      <div style={{ marginTop: 100 }}>
-        <TrailerCard data={trailer} />
-      </div>
+      {/* <EmblaCarousel slides={IMAGES} options={OPTIONS} /> */}
+
+      <TrailerCard data={trailer} />
     </div>
   );
 }

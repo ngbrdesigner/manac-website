@@ -18,5 +18,19 @@
   },
   "HomePage": {
     "title": "Hello world!"
+  },
+  "TrailerCard": {
+    "length": "Length",
+    "extension": "Extension",
+    "working area": "Working area",
+    "loading height": "Loading height",
+    "extendable semi-trailer": "Extendable semi-trailer",
+    "axles5+": "axles",
+    "axles4": "axles",
+    "m": "m",
+    "t": "t",
+    "mm": "mm",
+    "up to": "up to",
+    "view details": "View details"
   }
 }

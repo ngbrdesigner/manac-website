@@ -70,6 +70,10 @@
   cursor: pointer;
   transition: border 0.3s;
   font-family: var(--font-inter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
 }
 
 .details-button:hover {

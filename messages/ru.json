@@ -18,5 +18,19 @@
   },
   "HomePage": {
     "title": "Привет мир!"
+  },
+  "TrailerCard": {
+    "length": "Длина",
+    "extension": "Раздвижка",
+    "working area": "Рабочая площадка",
+    "loading height": "Погрузочная высота",
+    "extendable semi-trailer": "Раздвижной полуприцеп",
+    "axles5+": "осей",
+    "axles4": "оси",
+    "m": "м",
+    "t": "т",
+    "mm": "мм",
+    "up to": "до",
+    "view details": "Посмотреть детали"
   }
 }
