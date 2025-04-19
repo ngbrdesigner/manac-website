@@ -40,10 +40,10 @@ export default function Header() {
         {menuOpen && (
           <motion.div
             key="mobile-menu"
-            initial={{ x: "100%" }}
-            animate={{ x: 0 }}
-            exit={{ x: "100%" }}
-            transition={{ type: "tween", ease: "easeOut", duration: 0.3 }}
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 20 }}
+            transition={{ type: "tween", ease: "easeOut", duration: 0.1 }}
             className={clsx(styles.navLinks, styles.open)}
           >
             <div className={styles.closeContainer}>

@@ -51,13 +51,13 @@ export default function ProductionPage() {
     <div>
       {/* Кнопка для мобильных */}
       <div className={styles.mobileFilterButton}>
+        <div className={styles.selectedFilter}>
+          {formatFilterName(activeFilter)}
+        </div>
         <button onClick={() => setShowFilters(!showFilters)}>
           <SlidersHorizontal size={16} />
           <span>FILTERS</span>
         </button>
-        <div className={styles.selectedFilter}>
-          {formatFilterName(activeFilter)}
-        </div>
       </div>
 
       {/* Полоска фильтров */}

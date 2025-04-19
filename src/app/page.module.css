@@ -240,7 +240,7 @@ a.secondary {
     cursor: pointer;
     position: relative;
     color: var(--color-black);
-    border: 1px solid var(--detail-high-contrast);
+    border: 1px solid var(--border-dark);
     border-radius: 4px;
     padding: 8px;
   }
